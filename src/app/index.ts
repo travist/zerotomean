@@ -1,9 +1,8 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import {routing, RootComponent} from './routes';
+import {routing} from './routes';
 
-import {TechsModule} from './techs';
-
+import {HomeComponent} from './home';
 import {MainComponent} from './main';
 import {HeaderComponent} from './header';
 import {TitleComponent} from './title';
@@ -12,16 +11,15 @@ import {FooterComponent} from './footer';
 @NgModule({
   imports: [
     BrowserModule,
-    routing,
-    TechsModule
+    routing
   ],
   declarations: [
-    RootComponent,
+    HomeComponent,
     MainComponent,
     HeaderComponent,
     TitleComponent,
     FooterComponent
   ],
-  bootstrap: [RootComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule {}
