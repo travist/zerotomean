@@ -8,6 +8,10 @@ export const routes: Routes = [
   {
     path: 'auth',
     loadChildren: 'es6-promise-loader?,[name]!./auth.module#AuthModule'
+  },
+  {
+    path: 'event',
+    loadChildren: 'es6-promise-loader?,[name]!./event.module#EventResource'
   }
 ];
 export const routing = RouterModule.forRoot(routes);
