@@ -19,8 +19,12 @@ module.exports = {
         test: /\.ts$/,
         exclude: /node_modules/,
         loaders: [
-          'ts-loader'
+          'ts-loader', 'angular2-load-children-loader'
         ]
+      },
+      {
+        test: /\.(woff2?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: "file-loader?name=fonts/[name].[ext]"
       },
       {
         test: /\.html$/,
