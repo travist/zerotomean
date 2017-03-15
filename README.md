@@ -2,4 +2,5 @@
 -------------------------------------
 This is the application that we build within the 0 to M.E.A.N presentation.
 
+  - http://travistidwell.com/zerotomean
   - http://travistidwell.com/presentations/0toMEAN
