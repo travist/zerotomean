@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormioAppConfig } from 'ng2-formio';
 import { FormioAuthService, FormioAuthConfig } from 'ng2-formio/auth';
-import { AuthConfig } from './config';
+import { AuthConfig, AppConfig } from './config';
 import { routing } from './routes';
 
 import {HomeComponent} from './home';
@@ -24,6 +25,7 @@ import {FooterComponent} from './footer';
   ],
   providers: [
     FormioAuthService,
+    {provide: FormioAppConfig, useValue: AppConfig},
     {provide: FormioAuthConfig, useValue: AuthConfig}
   ],
   bootstrap: [MainComponent]

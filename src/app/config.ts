@@ -7,7 +7,6 @@ export const AppConfig: FormioAppConfig = {
 };
 
 export const AuthConfig: FormioAuthConfig = {
-  app: AppConfig,
   login: {
     form: 'user/login'
   },

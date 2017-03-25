@@ -1,7 +1,6 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { FormioResource, FormioResourceRoutes, FormioResourceConfig, FormioResourceService, FormioResourceViewComponent } from 'ng2-formio/resource';
-import { AppConfig } from './config';
 
 @Component({
   template: require('./event.html')
@@ -22,7 +21,6 @@ export class EventViewComponent extends FormioResourceViewComponent {
   providers: [
     FormioResourceService,
     {provide: FormioResourceConfig, useValue: {
-      app: AppConfig,
       name: 'event',
       form: 'event'
     }}
