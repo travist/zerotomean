@@ -6,8 +6,8 @@ import { FormioResource, FormioResourceRoutes, FormioResourceConfig, FormioResou
   template: require('./event.html')
 })
 export class EventViewComponent extends FormioResourceViewComponent {
-  constructor(service: FormioResourceService) {
-    super(service);
+  constructor(service: FormioResourceService, config: FormioResourceConfig) {
+    super(service, config);
   }
 }
 
